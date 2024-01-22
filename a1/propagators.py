@@ -91,13 +91,61 @@ def prop_FC(csp, newVar=None):
     '''Do forward checking. That is check constraints with
        only one uninstantiated variable. Remember to keep
        track of all pruned variable,value pairs and return '''
-    #IMPLEMENT
-    pass
+    
+    # If no specific variable is given, consider all constraints
+    if newVar is None:
+        constraints = csp.get_all_cons()
+    else: 
+        # Otherwise, only consider constraints involving the new variable
+        constraints = csp.get_cons_with_var(newVar)
+
+    pruned = []
+    for constraint in constraints:
+        if constraint.get_n_unasgn() == 1:
+            unassigned_var = constraint.get_unasgn_vars()[0]
+            for value in unassigned_var.cur_domain():
+                if not constraint.check(var=unassigned_var, val=value):
+                    unassigned_var.prune_value(value)
+                    pruned.append((unassigned_var, value))
+                    if unassigned_var.cur_domain_size() == 0:
+                        return (False, pruned)
+
+    return (True, pruned)
+
 
 
 def prop_GAC(csp, newVar=None):
     '''Do GAC propagation. If newVar is None we do initial GAC enforce
        processing all constraints. Otherwise we do GAC enforce with
        constraints containing newVar on GAC Queue'''
-    #IMPLEMENT
-    pass
+    
+    # If no specific variable is given, consider all constraints
+    if newVar is None:
+        constraints = csp.get_all_cons()
+    else: 
+        # Otherwise, only consider constraints involving the new variable
+        constraints = csp.get_cons_with_var(newVar)
+
+    pruned = [] # List to keep track of pruned values
+    queue = list(constraints) # Initialize queue with the relevant constraints
+
+    while queue:
+        constraint = queue.pop(0) # Dequeue a constraint
+        for var in constraint.get_scope(): # For each variable in the constraint's scope
+            for value in var.cur_domain(): # For each value in the variable's current domain
+                # Check if this value has support (i.e., doesn't violate the constraint)
+                if not constraint.has_support(var=var, val=value):
+                    var.prune_value(value) # Prune the value
+                    pruned.append((var, value)) # Record the pruning
+                    if var.cur_domain_size() == 0:
+                        # If the domain is empty, a dead-end is reached
+                        return (False, pruned)
+                    # Add all constraints involving this variable back to the queue
+                    for cons in csp.get_cons_with_var(var):
+                        if cons not in queue:
+                            queue.append(cons)
+
+    # If we reach here, no dead-end is found and propagation is successful
+    return (True, pruned)
+
+
