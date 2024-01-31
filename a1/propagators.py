@@ -92,25 +92,20 @@ def prop_FC(csp, newVar=None):
        only one uninstantiated variable. Remember to keep
        track of all pruned variable,value pairs and return '''
     
-    # If no specific variable is given, consider all constraints
-    if newVar is None:
-        constraints = csp.get_all_cons()
-    else: 
-        # Otherwise, only consider constraints involving the new variable
-        constraints = csp.get_cons_with_var(newVar)
+    if not newVar:
+        return True, []
 
-    pruned = []
-    for constraint in constraints:
-        if constraint.get_n_unasgn() == 1:
-            unassigned_var = constraint.get_unasgn_vars()[0]
-            for value in unassigned_var.cur_domain():
-                if not constraint.check(var=unassigned_var, val=value):
-                    unassigned_var.prune_value(value)
-                    pruned.append((unassigned_var, value))
-                    if unassigned_var.cur_domain_size() == 0:
-                        return (False, pruned)
+    pruned = [] # pruned values
+    for c in csp.get_cons_with_var(newVar): # constraints involving newVar
+        for v in c.get_unasgn_vars(): # unassigned vars in constraint
+            for d in v.cur_domain(): # if domain consistent
+                if not c.has_support(v, d): # prune if no support
+                    pruned.append((v, d))
+                    v.prune_value(d)
+            if v.cur_domain_size() == 0: # inconsistency if empty domain
+                return False, pruned
 
-    return (True, pruned)
+    return True, pruned
 
 
 

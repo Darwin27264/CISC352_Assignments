@@ -1,0 +1,2000 @@
+test_bne_grid_1 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_2 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_3 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_4 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_5 (__main__.TestBinaryGrid) ... FAIL
+test_cage_existence (__main__.TestCageConstraints) ... ERROR
+test_cages_1 (__main__.TestCageConstraints) ... FAIL
+test_cages_2 (__main__.TestCageConstraints) ... FAIL
+test_cages_3 (__main__.TestCageConstraints) ... FAIL
+test_cages_4 (__main__.TestCageConstraints) ... FAIL
+test_cages_5 (__main__.TestCageConstraints) ... FAIL
+test_cages_6 (__main__.TestCageConstraints) ... FAIL
+test_dh_1 (__main__.TestDH) ... FAIL
+test_dh_2 (__main__.TestDH) ... FAIL
+test_dh_3 (__main__.TestDH) ... FAIL
+test_dh_4 (__main__.TestDH) ... FAIL
+test_mrv_1 (__main__.TestMRV) ... FAIL
+test_mrv_2 (__main__.TestMRV) ... FAIL
+test_mrv_3 (__main__.TestMRV) ... FAIL
+test_mrv_4 (__main__.TestMRV) ... FAIL
+test_nary_grid_1 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_2 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_3 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_4 (__main__.TestNaryGrid) ... FAIL
+test_bin_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_GAC_0 (__main__.TestPropGAC) ... ok
+test_prop_GAC_1 (__main__.TestPropGAC) ... ok
+test_prop_GAC_2 (__main__.TestPropGAC) ... ok
+test_prop_GAC_3 (__main__.TestPropGAC) ... ok
+test_prop_GAC_4 (__main__.TestPropGAC) ... ok
+test_prop_GAC_5 (__main__.TestPropGAC) ... ok
+test_prop_GAC_6 (__main__.TestPropGAC) ... ok
+test_prop_GAC_7 (__main__.TestPropGAC) ... ok
+test_prop_GAC_8 (__main__.TestPropGAC) ... ok
+test_prop_GAC_9 (__main__.TestPropGAC) ... ok
+
+======================================================================
+ERROR: test_cage_existence (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\darwi\Documents\GitHub\CISC352_Assignments\a1\autograder_stu.py", line 616, in test_cage_existence
+    csp, var_array = cagey_csp_model(board)
+TypeError: cannot unpack non-iterable NoneType object
+
+======================================================================
+FAIL: test_bne_grid_1 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_bne_grid_2 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (1, [(1, 2)], '?'), (8, [(1, 3), (2, 3), (2, 2)], '+'), (3, [(3, 1)], '?'), (3, [(3, 2), (3, 3)], '+')])
+
+
+======================================================================
+FAIL: test_bne_grid_3 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 2)], '+'), (4, [(3, 4)], '?'), (3, [(3, 1), (4, 1)], '-'), (4, [(3, 3)], '?'), (6, [(3, 4), (4, 4)], '*'), (2, [(4, 2), (4, 3)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_4 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(1, [(1, 1), (2, 1)], '-'), (10, [(1, 2), (1, 3), (2, 3), (4, 3)], '+'), (9, [(1, 4), (1, 5), (2, 4), (2, 5)], '+'), (40, [(2, 2), (3, 1), (3, 2)], '*'), (50, [(3, 4), (4, 3), (4, 4)], '*'), (10, [(3, 5), (4, 5), (5, 5)], '+'), (9, [(4, 1), (4, 2), (5, 1), (5, 2)], '+'), (4, [(5, 3), (5, 4)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_5 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(11, [(1, 1), (2, 1)], '+'), (3, [(1, 2), (2, 2)], '*'), (20, [(1, 3), (2, 3), (3, 3)], '*'), (2, [(1, 4), (1, 5)], '-'), (6, [(1, 6), (2, 6)], '/'), (6, [(2, 4), (2, 5)], '*'), (5, [(3, 1), (4, 1)], '+'), (40, [(3, 2), (4, 2), (5, 2)], '*'), (10, [(3, 4), (4, 4)], '+'), (10, [(3, 5), (3, 6)], '*'), (3, [(4, 3), (5, 3)], '-'), (8, [(4, 5), (4, 6), (5, 6)], '+'), (1, [(5, 1), (6, 1), (6, 2)], '-'), (11, [(5, 4), (5, 5)], '+'), (1, [(6, 3), (6, 4)], '-'), (2, [(6, 5), (6, 6)], '-')])
+
+
+======================================================================
+FAIL: test_cages_1 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '+')])
+
+
+======================================================================
+FAIL: test_cages_2 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '-')])
+
+
+======================================================================
+FAIL: test_cages_3 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '*')])
+
+
+======================================================================
+FAIL: test_cages_4 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '+')])
+
+
+======================================================================
+FAIL: test_cages_5 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(7, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '-')])
+
+
+======================================================================
+FAIL: test_cages_6 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '*')])
+
+
+======================================================================
+FAIL: test_dh_1 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord DH
+
+======================================================================
+FAIL: test_dh_2 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord DH
+
+======================================================================
+FAIL: test_dh_3 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord DH
+
+======================================================================
+FAIL: test_dh_4 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord DH
+
+======================================================================
+FAIL: test_mrv_1 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord MRV
+
+======================================================================
+FAIL: test_mrv_2 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord MRV
+
+======================================================================
+FAIL: test_mrv_3 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord MRV
+
+======================================================================
+FAIL: test_mrv_4 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : No Variable Returned from Ord MRV
+
+======================================================================
+FAIL: test_nary_grid_1 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_2 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (7, [(1, 3), (2, 3)], '+'), (4, [(1, 4)], '?'), (1, [(2, 1), (2, 2)], '-'), (3, [(2, 2), (3, 2)], '-'), (2, [(2, 4), (3, 4)], '-'), (4, [(3, 3), (4, 3), (4, 4)], '*'), (1, [(4, 1), (4, 2)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_3 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(2, [(1, 1), (2, 1)], '/'), (1, [(1, 2), (2, 2)], '-'), (2, [(1, 3), (2, 3)], '-'), (4, [(1, 4), (1, 5)], '-'), (6, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (3, 2)], '-'), (3, [(3, 3), (4, 3)], '-'), (2, [(3, 4), (4, 4)], '/'), (3, [(3, 5), (4, 5)], '-'), (8, [(4, 1), (4, 2)], '+'), (7, [(5, 1), (5, 2), (5, 3)], '+'), (2, [(5, 4), (5, 5)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_4 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(2, [(1, 1), (1, 2)], '-'), (3, [(1, 3), (2, 3)], '-'), (5, [(1, 4), (1, 5)], '-'), (1, [(1, 6), (2, 6)], '-'), (2, [(2, 1), (2, 2)], '-'), (10, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (4, 1)], '-'), (2, [(3, 2), (4, 2)], '/'), (30, [(3, 3), (3, 4)], '*'), (3, [(3, 5), (3, 6)], '-'), (6, [(4, 3), (4, 4)], '*'), (6, [(4, 4), (4, 5)], '+'), (6, [(5, 1), (5, 2)], '+'), (2, [(5, 3), (6, 3)], '/'), (2, [(5, 4), (5, 5)], '-'), (1, [(5, 6), (6, 6)], '-'), (3, [(6, 1), (6, 2)], '+'), (7, [(6, 4), (6, 5)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+======================================================================
+FAIL: test_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.324s
+
+FAILED (failures=33, errors=1)
+----------------------------------------------------------------------
+Time spent:
+
+test_prop_GAC_0: 0.0010s
+test_prop_GAC_1: 0.0020s
+test_prop_GAC_2: 0.0030s
+test_prop_GAC_3: 0.0031s
+test_prop_GAC_4: 0.0030s
+test_prop_GAC_5: 0.0095s
+test_prop_GAC_6: 0.0443s
+test_prop_GAC_7: 0.0088s
+test_prop_GAC_8: 0.0901s
+test_prop_GAC_9: 0.1424s
+----------------------------------------------------------------------
+Grades:
+
+FC: 0.0/0.5
+GAC: 0.75/0.75
+MRV: 0.0/0.25
+DH: 0.0/0.25
+BINARY: 0.0/0.25
+NARY: 0.0/0.25
+CAGEY: 0.0/0.5
+
+TOTAL: 0.75/2.75
+Code quality: ?/0.25
+
+Running time: 2024_01_31-16:02:11
+
+===========================================
+test_bne_grid_1 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_2 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_3 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_4 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_5 (__main__.TestBinaryGrid) ... FAIL
+test_cage_existence (__main__.TestCageConstraints) ... ERROR
+test_cages_1 (__main__.TestCageConstraints) ... FAIL
+test_cages_2 (__main__.TestCageConstraints) ... FAIL
+test_cages_3 (__main__.TestCageConstraints) ... FAIL
+test_cages_4 (__main__.TestCageConstraints) ... FAIL
+test_cages_5 (__main__.TestCageConstraints) ... FAIL
+test_cages_6 (__main__.TestCageConstraints) ... FAIL
+test_dh_1 (__main__.TestDH) ... FAIL
+test_dh_2 (__main__.TestDH) ... FAIL
+test_dh_3 (__main__.TestDH) ... FAIL
+test_dh_4 (__main__.TestDH) ... FAIL
+test_mrv_1 (__main__.TestMRV) ... FAIL
+test_mrv_2 (__main__.TestMRV) ... FAIL
+test_mrv_3 (__main__.TestMRV) ... FAIL
+test_mrv_4 (__main__.TestMRV) ... FAIL
+test_nary_grid_1 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_2 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_3 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_4 (__main__.TestNaryGrid) ... FAIL
+test_bin_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_GAC_0 (__main__.TestPropGAC) ... ok
+test_prop_GAC_1 (__main__.TestPropGAC) ... ok
+test_prop_GAC_2 (__main__.TestPropGAC) ... ok
+test_prop_GAC_3 (__main__.TestPropGAC) ... ok
+test_prop_GAC_4 (__main__.TestPropGAC) ... ok
+test_prop_GAC_5 (__main__.TestPropGAC) ... ok
+test_prop_GAC_6 (__main__.TestPropGAC) ... ok
+test_prop_GAC_7 (__main__.TestPropGAC) ... ok
+test_prop_GAC_8 (__main__.TestPropGAC) ... ok
+test_prop_GAC_9 (__main__.TestPropGAC) ... ok
+
+======================================================================
+ERROR: test_cage_existence (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\darwi\Documents\GitHub\CISC352_Assignments\a1\autograder_stu.py", line 616, in test_cage_existence
+    csp, var_array = cagey_csp_model(board)
+TypeError: cannot unpack non-iterable NoneType object
+
+======================================================================
+FAIL: test_bne_grid_1 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_bne_grid_2 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (1, [(1, 2)], '?'), (8, [(1, 3), (2, 3), (2, 2)], '+'), (3, [(3, 1)], '?'), (3, [(3, 2), (3, 3)], '+')])
+
+
+======================================================================
+FAIL: test_bne_grid_3 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 2)], '+'), (4, [(3, 4)], '?'), (3, [(3, 1), (4, 1)], '-'), (4, [(3, 3)], '?'), (6, [(3, 4), (4, 4)], '*'), (2, [(4, 2), (4, 3)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_4 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(1, [(1, 1), (2, 1)], '-'), (10, [(1, 2), (1, 3), (2, 3), (4, 3)], '+'), (9, [(1, 4), (1, 5), (2, 4), (2, 5)], '+'), (40, [(2, 2), (3, 1), (3, 2)], '*'), (50, [(3, 4), (4, 3), (4, 4)], '*'), (10, [(3, 5), (4, 5), (5, 5)], '+'), (9, [(4, 1), (4, 2), (5, 1), (5, 2)], '+'), (4, [(5, 3), (5, 4)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_5 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(11, [(1, 1), (2, 1)], '+'), (3, [(1, 2), (2, 2)], '*'), (20, [(1, 3), (2, 3), (3, 3)], '*'), (2, [(1, 4), (1, 5)], '-'), (6, [(1, 6), (2, 6)], '/'), (6, [(2, 4), (2, 5)], '*'), (5, [(3, 1), (4, 1)], '+'), (40, [(3, 2), (4, 2), (5, 2)], '*'), (10, [(3, 4), (4, 4)], '+'), (10, [(3, 5), (3, 6)], '*'), (3, [(4, 3), (5, 3)], '-'), (8, [(4, 5), (4, 6), (5, 6)], '+'), (1, [(5, 1), (6, 1), (6, 2)], '-'), (11, [(5, 4), (5, 5)], '+'), (1, [(6, 3), (6, 4)], '-'), (2, [(6, 5), (6, 6)], '-')])
+
+
+======================================================================
+FAIL: test_cages_1 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '+')])
+
+
+======================================================================
+FAIL: test_cages_2 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '-')])
+
+
+======================================================================
+FAIL: test_cages_3 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '*')])
+
+
+======================================================================
+FAIL: test_cages_4 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '+')])
+
+
+======================================================================
+FAIL: test_cages_5 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(7, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '-')])
+
+
+======================================================================
+FAIL: test_cages_6 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '*')])
+
+
+======================================================================
+FAIL: test_dh_1 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_dh_2 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_dh_3 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_dh_4 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_1 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_2 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_3 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_4 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_nary_grid_1 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_2 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (7, [(1, 3), (2, 3)], '+'), (4, [(1, 4)], '?'), (1, [(2, 1), (2, 2)], '-'), (3, [(2, 2), (3, 2)], '-'), (2, [(2, 4), (3, 4)], '-'), (4, [(3, 3), (4, 3), (4, 4)], '*'), (1, [(4, 1), (4, 2)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_3 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(2, [(1, 1), (2, 1)], '/'), (1, [(1, 2), (2, 2)], '-'), (2, [(1, 3), (2, 3)], '-'), (4, [(1, 4), (1, 5)], '-'), (6, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (3, 2)], '-'), (3, [(3, 3), (4, 3)], '-'), (2, [(3, 4), (4, 4)], '/'), (3, [(3, 5), (4, 5)], '-'), (8, [(4, 1), (4, 2)], '+'), (7, [(5, 1), (5, 2), (5, 3)], '+'), (2, [(5, 4), (5, 5)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_4 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(2, [(1, 1), (1, 2)], '-'), (3, [(1, 3), (2, 3)], '-'), (5, [(1, 4), (1, 5)], '-'), (1, [(1, 6), (2, 6)], '-'), (2, [(2, 1), (2, 2)], '-'), (10, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (4, 1)], '-'), (2, [(3, 2), (4, 2)], '/'), (30, [(3, 3), (3, 4)], '*'), (3, [(3, 5), (3, 6)], '-'), (6, [(4, 3), (4, 4)], '*'), (6, [(4, 4), (4, 5)], '+'), (6, [(5, 1), (5, 2)], '+'), (2, [(5, 3), (6, 3)], '/'), (2, [(5, 4), (5, 5)], '-'), (1, [(5, 6), (6, 6)], '-'), (3, [(6, 1), (6, 2)], '+'), (7, [(6, 4), (6, 5)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+======================================================================
+FAIL: test_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.611s
+
+FAILED (failures=33, errors=1)
+----------------------------------------------------------------------
+Time spent:
+
+test_prop_GAC_0: 0.0000s
+test_prop_GAC_1: 0.0000s
+test_prop_GAC_2: 0.0157s
+test_prop_GAC_3: 0.0089s
+test_prop_GAC_4: 0.0075s
+test_prop_GAC_5: 0.0161s
+test_prop_GAC_6: 0.0927s
+test_prop_GAC_7: 0.0271s
+test_prop_GAC_8: 0.1617s
+test_prop_GAC_9: 0.2583s
+----------------------------------------------------------------------
+Grades:
+
+FC: 0.0/0.5
+GAC: 0.75/0.75
+MRV: 0.0/0.25
+DH: 0.0/0.25
+BINARY: 0.0/0.25
+NARY: 0.0/0.25
+CAGEY: 0.0/0.5
+
+TOTAL: 0.75/2.75
+Code quality: ?/0.25
+
+Running time: 2024_01_31-17:16:45
+
+===========================================
+test_bne_grid_1 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_2 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_3 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_4 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_5 (__main__.TestBinaryGrid) ... FAIL
+test_cage_existence (__main__.TestCageConstraints) ... ERROR
+test_cages_1 (__main__.TestCageConstraints) ... FAIL
+test_cages_2 (__main__.TestCageConstraints) ... FAIL
+test_cages_3 (__main__.TestCageConstraints) ... FAIL
+test_cages_4 (__main__.TestCageConstraints) ... FAIL
+test_cages_5 (__main__.TestCageConstraints) ... FAIL
+test_cages_6 (__main__.TestCageConstraints) ... FAIL
+test_dh_1 (__main__.TestDH) ... FAIL
+test_dh_2 (__main__.TestDH) ... FAIL
+test_dh_3 (__main__.TestDH) ... FAIL
+test_dh_4 (__main__.TestDH) ... FAIL
+test_mrv_1 (__main__.TestMRV) ... FAIL
+test_mrv_2 (__main__.TestMRV) ... FAIL
+test_mrv_3 (__main__.TestMRV) ... FAIL
+test_mrv_4 (__main__.TestMRV) ... FAIL
+test_nary_grid_1 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_2 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_3 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_4 (__main__.TestNaryGrid) ... FAIL
+test_bin_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_GAC_0 (__main__.TestPropGAC) ... ok
+test_prop_GAC_1 (__main__.TestPropGAC) ... ok
+test_prop_GAC_2 (__main__.TestPropGAC) ... ok
+test_prop_GAC_3 (__main__.TestPropGAC) ... ok
+test_prop_GAC_4 (__main__.TestPropGAC) ... ok
+test_prop_GAC_5 (__main__.TestPropGAC) ... ok
+test_prop_GAC_6 (__main__.TestPropGAC) ... ok
+test_prop_GAC_7 (__main__.TestPropGAC) ... ok
+test_prop_GAC_8 (__main__.TestPropGAC) ... ok
+test_prop_GAC_9 (__main__.TestPropGAC) ... ok
+
+======================================================================
+ERROR: test_cage_existence (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\darwi\Documents\GitHub\CISC352_Assignments\a1\autograder_stu.py", line 616, in test_cage_existence
+    csp, var_array = cagey_csp_model(board)
+TypeError: cannot unpack non-iterable NoneType object
+
+======================================================================
+FAIL: test_bne_grid_1 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_bne_grid_2 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (1, [(1, 2)], '?'), (8, [(1, 3), (2, 3), (2, 2)], '+'), (3, [(3, 1)], '?'), (3, [(3, 2), (3, 3)], '+')])
+
+
+======================================================================
+FAIL: test_bne_grid_3 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 2)], '+'), (4, [(3, 4)], '?'), (3, [(3, 1), (4, 1)], '-'), (4, [(3, 3)], '?'), (6, [(3, 4), (4, 4)], '*'), (2, [(4, 2), (4, 3)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_4 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(1, [(1, 1), (2, 1)], '-'), (10, [(1, 2), (1, 3), (2, 3), (4, 3)], '+'), (9, [(1, 4), (1, 5), (2, 4), (2, 5)], '+'), (40, [(2, 2), (3, 1), (3, 2)], '*'), (50, [(3, 4), (4, 3), (4, 4)], '*'), (10, [(3, 5), (4, 5), (5, 5)], '+'), (9, [(4, 1), (4, 2), (5, 1), (5, 2)], '+'), (4, [(5, 3), (5, 4)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_5 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(11, [(1, 1), (2, 1)], '+'), (3, [(1, 2), (2, 2)], '*'), (20, [(1, 3), (2, 3), (3, 3)], '*'), (2, [(1, 4), (1, 5)], '-'), (6, [(1, 6), (2, 6)], '/'), (6, [(2, 4), (2, 5)], '*'), (5, [(3, 1), (4, 1)], '+'), (40, [(3, 2), (4, 2), (5, 2)], '*'), (10, [(3, 4), (4, 4)], '+'), (10, [(3, 5), (3, 6)], '*'), (3, [(4, 3), (5, 3)], '-'), (8, [(4, 5), (4, 6), (5, 6)], '+'), (1, [(5, 1), (6, 1), (6, 2)], '-'), (11, [(5, 4), (5, 5)], '+'), (1, [(6, 3), (6, 4)], '-'), (2, [(6, 5), (6, 6)], '-')])
+
+
+======================================================================
+FAIL: test_cages_1 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '+')])
+
+
+======================================================================
+FAIL: test_cages_2 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '-')])
+
+
+======================================================================
+FAIL: test_cages_3 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '*')])
+
+
+======================================================================
+FAIL: test_cages_4 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '+')])
+
+
+======================================================================
+FAIL: test_cages_5 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(7, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '-')])
+
+
+======================================================================
+FAIL: test_cages_6 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '*')])
+
+
+======================================================================
+FAIL: test_dh_1 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_dh_2 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_dh_3 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_dh_4 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_mrv_1 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_mrv_2 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_mrv_3 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_mrv_4 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'get_unassigned_variables'". 
+
+======================================================================
+FAIL: test_nary_grid_1 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_2 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (7, [(1, 3), (2, 3)], '+'), (4, [(1, 4)], '?'), (1, [(2, 1), (2, 2)], '-'), (3, [(2, 2), (3, 2)], '-'), (2, [(2, 4), (3, 4)], '-'), (4, [(3, 3), (4, 3), (4, 4)], '*'), (1, [(4, 1), (4, 2)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_3 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(2, [(1, 1), (2, 1)], '/'), (1, [(1, 2), (2, 2)], '-'), (2, [(1, 3), (2, 3)], '-'), (4, [(1, 4), (1, 5)], '-'), (6, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (3, 2)], '-'), (3, [(3, 3), (4, 3)], '-'), (2, [(3, 4), (4, 4)], '/'), (3, [(3, 5), (4, 5)], '-'), (8, [(4, 1), (4, 2)], '+'), (7, [(5, 1), (5, 2), (5, 3)], '+'), (2, [(5, 4), (5, 5)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_4 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(2, [(1, 1), (1, 2)], '-'), (3, [(1, 3), (2, 3)], '-'), (5, [(1, 4), (1, 5)], '-'), (1, [(1, 6), (2, 6)], '-'), (2, [(2, 1), (2, 2)], '-'), (10, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (4, 1)], '-'), (2, [(3, 2), (4, 2)], '/'), (30, [(3, 3), (3, 4)], '*'), (3, [(3, 5), (3, 6)], '-'), (6, [(4, 3), (4, 4)], '*'), (6, [(4, 4), (4, 5)], '+'), (6, [(5, 1), (5, 2)], '+'), (2, [(5, 3), (6, 3)], '/'), (2, [(5, 4), (5, 5)], '-'), (1, [(5, 6), (6, 6)], '-'), (3, [(6, 1), (6, 2)], '+'), (7, [(6, 4), (6, 5)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+======================================================================
+FAIL: test_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.605s
+
+FAILED (failures=33, errors=1)
+----------------------------------------------------------------------
+Time spent:
+
+test_prop_GAC_0: 0.0020s
+test_prop_GAC_1: 0.0077s
+test_prop_GAC_2: 0.0060s
+test_prop_GAC_3: 0.0050s
+test_prop_GAC_4: 0.0050s
+test_prop_GAC_5: 0.0206s
+test_prop_GAC_6: 0.0838s
+test_prop_GAC_7: 0.0170s
+test_prop_GAC_8: 0.1699s
+test_prop_GAC_9: 0.2607s
+----------------------------------------------------------------------
+Grades:
+
+FC: 0.0/0.5
+GAC: 0.75/0.75
+MRV: 0.0/0.25
+DH: 0.0/0.25
+BINARY: 0.0/0.25
+NARY: 0.0/0.25
+CAGEY: 0.0/0.5
+
+TOTAL: 0.75/2.75
+Code quality: ?/0.25
+
+Running time: 2024_01_31-17:20:10
+
+===========================================
+test_bne_grid_1 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_2 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_3 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_4 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_5 (__main__.TestBinaryGrid) ... FAIL
+test_cage_existence (__main__.TestCageConstraints) ... ERROR
+test_cages_1 (__main__.TestCageConstraints) ... FAIL
+test_cages_2 (__main__.TestCageConstraints) ... FAIL
+test_cages_3 (__main__.TestCageConstraints) ... FAIL
+test_cages_4 (__main__.TestCageConstraints) ... FAIL
+test_cages_5 (__main__.TestCageConstraints) ... FAIL
+test_cages_6 (__main__.TestCageConstraints) ... FAIL
+test_dh_1 (__main__.TestDH) ... FAIL
+test_dh_2 (__main__.TestDH) ... FAIL
+test_dh_3 (__main__.TestDH) ... FAIL
+test_dh_4 (__main__.TestDH) ... FAIL
+test_mrv_1 (__main__.TestMRV) ... FAIL
+test_mrv_2 (__main__.TestMRV) ... FAIL
+test_mrv_3 (__main__.TestMRV) ... FAIL
+test_mrv_4 (__main__.TestMRV) ... FAIL
+test_nary_grid_1 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_2 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_3 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_4 (__main__.TestNaryGrid) ... FAIL
+test_bin_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_GAC_0 (__main__.TestPropGAC) ... ok
+test_prop_GAC_1 (__main__.TestPropGAC) ... ok
+test_prop_GAC_2 (__main__.TestPropGAC) ... ok
+test_prop_GAC_3 (__main__.TestPropGAC) ... ok
+test_prop_GAC_4 (__main__.TestPropGAC) ... ok
+test_prop_GAC_5 (__main__.TestPropGAC) ... ok
+test_prop_GAC_6 (__main__.TestPropGAC) ... ok
+test_prop_GAC_7 (__main__.TestPropGAC) ... ok
+test_prop_GAC_8 (__main__.TestPropGAC) ... ok
+test_prop_GAC_9 (__main__.TestPropGAC) ... ok
+
+======================================================================
+ERROR: test_cage_existence (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\darwi\Documents\GitHub\CISC352_Assignments\a1\autograder_stu.py", line 616, in test_cage_existence
+    csp, var_array = cagey_csp_model(board)
+TypeError: cannot unpack non-iterable NoneType object
+
+======================================================================
+FAIL: test_bne_grid_1 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_bne_grid_2 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (1, [(1, 2)], '?'), (8, [(1, 3), (2, 3), (2, 2)], '+'), (3, [(3, 1)], '?'), (3, [(3, 2), (3, 3)], '+')])
+
+
+======================================================================
+FAIL: test_bne_grid_3 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 2)], '+'), (4, [(3, 4)], '?'), (3, [(3, 1), (4, 1)], '-'), (4, [(3, 3)], '?'), (6, [(3, 4), (4, 4)], '*'), (2, [(4, 2), (4, 3)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_4 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(1, [(1, 1), (2, 1)], '-'), (10, [(1, 2), (1, 3), (2, 3), (4, 3)], '+'), (9, [(1, 4), (1, 5), (2, 4), (2, 5)], '+'), (40, [(2, 2), (3, 1), (3, 2)], '*'), (50, [(3, 4), (4, 3), (4, 4)], '*'), (10, [(3, 5), (4, 5), (5, 5)], '+'), (9, [(4, 1), (4, 2), (5, 1), (5, 2)], '+'), (4, [(5, 3), (5, 4)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_5 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(11, [(1, 1), (2, 1)], '+'), (3, [(1, 2), (2, 2)], '*'), (20, [(1, 3), (2, 3), (3, 3)], '*'), (2, [(1, 4), (1, 5)], '-'), (6, [(1, 6), (2, 6)], '/'), (6, [(2, 4), (2, 5)], '*'), (5, [(3, 1), (4, 1)], '+'), (40, [(3, 2), (4, 2), (5, 2)], '*'), (10, [(3, 4), (4, 4)], '+'), (10, [(3, 5), (3, 6)], '*'), (3, [(4, 3), (5, 3)], '-'), (8, [(4, 5), (4, 6), (5, 6)], '+'), (1, [(5, 1), (6, 1), (6, 2)], '-'), (11, [(5, 4), (5, 5)], '+'), (1, [(6, 3), (6, 4)], '-'), (2, [(6, 5), (6, 6)], '-')])
+
+
+======================================================================
+FAIL: test_cages_1 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '+')])
+
+
+======================================================================
+FAIL: test_cages_2 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '-')])
+
+
+======================================================================
+FAIL: test_cages_3 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '*')])
+
+
+======================================================================
+FAIL: test_cages_4 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '+')])
+
+
+======================================================================
+FAIL: test_cages_5 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(7, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '-')])
+
+
+======================================================================
+FAIL: test_cages_6 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '*')])
+
+
+======================================================================
+FAIL: test_dh_1 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_dh_2 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_dh_3 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_dh_4 (__main__.TestDH)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_1 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_2 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_3 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_mrv_4 (__main__.TestMRV)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'CSP' object has no attribute 'variables'". 
+
+======================================================================
+FAIL: test_nary_grid_1 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_2 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (7, [(1, 3), (2, 3)], '+'), (4, [(1, 4)], '?'), (1, [(2, 1), (2, 2)], '-'), (3, [(2, 2), (3, 2)], '-'), (2, [(2, 4), (3, 4)], '-'), (4, [(3, 3), (4, 3), (4, 4)], '*'), (1, [(4, 1), (4, 2)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_3 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(2, [(1, 1), (2, 1)], '/'), (1, [(1, 2), (2, 2)], '-'), (2, [(1, 3), (2, 3)], '-'), (4, [(1, 4), (1, 5)], '-'), (6, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (3, 2)], '-'), (3, [(3, 3), (4, 3)], '-'), (2, [(3, 4), (4, 4)], '/'), (3, [(3, 5), (4, 5)], '-'), (8, [(4, 1), (4, 2)], '+'), (7, [(5, 1), (5, 2), (5, 3)], '+'), (2, [(5, 4), (5, 5)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_4 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(2, [(1, 1), (1, 2)], '-'), (3, [(1, 3), (2, 3)], '-'), (5, [(1, 4), (1, 5)], '-'), (1, [(1, 6), (2, 6)], '-'), (2, [(2, 1), (2, 2)], '-'), (10, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (4, 1)], '-'), (2, [(3, 2), (4, 2)], '/'), (30, [(3, 3), (3, 4)], '*'), (3, [(3, 5), (3, 6)], '-'), (6, [(4, 3), (4, 4)], '*'), (6, [(4, 4), (4, 5)], '+'), (6, [(5, 1), (5, 2)], '+'), (2, [(5, 3), (6, 3)], '/'), (2, [(5, 4), (5, 5)], '-'), (1, [(5, 6), (6, 6)], '-'), (3, [(6, 1), (6, 2)], '+'), (7, [(6, 4), (6, 5)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+======================================================================
+FAIL: test_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.659s
+
+FAILED (failures=33, errors=1)
+----------------------------------------------------------------------
+Time spent:
+
+test_prop_GAC_0: 0.0020s
+test_prop_GAC_1: 0.0040s
+test_prop_GAC_2: 0.0112s
+test_prop_GAC_3: 0.0050s
+test_prop_GAC_4: 0.0050s
+test_prop_GAC_5: 0.0303s
+test_prop_GAC_6: 0.0977s
+test_prop_GAC_7: 0.0215s
+test_prop_GAC_8: 0.1689s
+test_prop_GAC_9: 0.2804s
+----------------------------------------------------------------------
+Grades:
+
+FC: 0.0/0.5
+GAC: 0.75/0.75
+MRV: 0.0/0.25
+DH: 0.0/0.25
+BINARY: 0.0/0.25
+NARY: 0.0/0.25
+CAGEY: 0.0/0.5
+
+TOTAL: 0.75/2.75
+Code quality: ?/0.25
+
+Running time: 2024_01_31-17:23:26
+
+===========================================
+test_bne_grid_1 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_2 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_3 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_4 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_5 (__main__.TestBinaryGrid) ... FAIL
+test_cage_existence (__main__.TestCageConstraints) ... ERROR
+test_cages_1 (__main__.TestCageConstraints) ... FAIL
+test_cages_2 (__main__.TestCageConstraints) ... FAIL
+test_cages_3 (__main__.TestCageConstraints) ... FAIL
+test_cages_4 (__main__.TestCageConstraints) ... FAIL
+test_cages_5 (__main__.TestCageConstraints) ... FAIL
+test_cages_6 (__main__.TestCageConstraints) ... FAIL
+test_dh_1 (__main__.TestDH) ... ok
+test_dh_2 (__main__.TestDH) ... ok
+test_dh_3 (__main__.TestDH) ... ok
+test_dh_4 (__main__.TestDH) ... ok
+test_mrv_1 (__main__.TestMRV) ... ok
+test_mrv_2 (__main__.TestMRV) ... ok
+test_mrv_3 (__main__.TestMRV) ... ok
+test_mrv_4 (__main__.TestMRV) ... ok
+test_nary_grid_1 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_2 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_3 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_4 (__main__.TestNaryGrid) ... FAIL
+test_bin_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_bin_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_fc_0 (__main__.TestPropFC) ... FAIL
+test_prop_fc_1 (__main__.TestPropFC) ... FAIL
+test_prop_fc_2 (__main__.TestPropFC) ... FAIL
+test_prop_fc_3 (__main__.TestPropFC) ... FAIL
+test_prop_fc_4 (__main__.TestPropFC) ... FAIL
+test_prop_GAC_0 (__main__.TestPropGAC) ... ok
+test_prop_GAC_1 (__main__.TestPropGAC) ... ok
+test_prop_GAC_2 (__main__.TestPropGAC) ... ok
+test_prop_GAC_3 (__main__.TestPropGAC) ... ok
+test_prop_GAC_4 (__main__.TestPropGAC) ... ok
+test_prop_GAC_5 (__main__.TestPropGAC) ... ok
+test_prop_GAC_6 (__main__.TestPropGAC) ... ok
+test_prop_GAC_7 (__main__.TestPropGAC) ... ok
+test_prop_GAC_8 (__main__.TestPropGAC) ... ok
+test_prop_GAC_9 (__main__.TestPropGAC) ... ok
+
+======================================================================
+ERROR: test_cage_existence (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\darwi\Documents\GitHub\CISC352_Assignments\a1\autograder_stu.py", line 616, in test_cage_existence
+    csp, var_array = cagey_csp_model(board)
+TypeError: cannot unpack non-iterable NoneType object
+
+======================================================================
+FAIL: test_bne_grid_1 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_bne_grid_2 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (1, [(1, 2)], '?'), (8, [(1, 3), (2, 3), (2, 2)], '+'), (3, [(3, 1)], '?'), (3, [(3, 2), (3, 3)], '+')])
+
+
+======================================================================
+FAIL: test_bne_grid_3 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 2)], '+'), (4, [(3, 4)], '?'), (3, [(3, 1), (4, 1)], '-'), (4, [(3, 3)], '?'), (6, [(3, 4), (4, 4)], '*'), (2, [(4, 2), (4, 3)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_4 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(1, [(1, 1), (2, 1)], '-'), (10, [(1, 2), (1, 3), (2, 3), (4, 3)], '+'), (9, [(1, 4), (1, 5), (2, 4), (2, 5)], '+'), (40, [(2, 2), (3, 1), (3, 2)], '*'), (50, [(3, 4), (4, 3), (4, 4)], '*'), (10, [(3, 5), (4, 5), (5, 5)], '+'), (9, [(4, 1), (4, 2), (5, 1), (5, 2)], '+'), (4, [(5, 3), (5, 4)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_5 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(11, [(1, 1), (2, 1)], '+'), (3, [(1, 2), (2, 2)], '*'), (20, [(1, 3), (2, 3), (3, 3)], '*'), (2, [(1, 4), (1, 5)], '-'), (6, [(1, 6), (2, 6)], '/'), (6, [(2, 4), (2, 5)], '*'), (5, [(3, 1), (4, 1)], '+'), (40, [(3, 2), (4, 2), (5, 2)], '*'), (10, [(3, 4), (4, 4)], '+'), (10, [(3, 5), (3, 6)], '*'), (3, [(4, 3), (5, 3)], '-'), (8, [(4, 5), (4, 6), (5, 6)], '+'), (1, [(5, 1), (6, 1), (6, 2)], '-'), (11, [(5, 4), (5, 5)], '+'), (1, [(6, 3), (6, 4)], '-'), (2, [(6, 5), (6, 6)], '-')])
+
+
+======================================================================
+FAIL: test_cages_1 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '+')])
+
+
+======================================================================
+FAIL: test_cages_2 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '-')])
+
+
+======================================================================
+FAIL: test_cages_3 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '*')])
+
+
+======================================================================
+FAIL: test_cages_4 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '+')])
+
+
+======================================================================
+FAIL: test_cages_5 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(7, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '-')])
+
+
+======================================================================
+FAIL: test_cages_6 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '*')])
+
+
+======================================================================
+FAIL: test_nary_grid_1 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_2 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (7, [(1, 3), (2, 3)], '+'), (4, [(1, 4)], '?'), (1, [(2, 1), (2, 2)], '-'), (3, [(2, 2), (3, 2)], '-'), (2, [(2, 4), (3, 4)], '-'), (4, [(3, 3), (4, 3), (4, 4)], '*'), (1, [(4, 1), (4, 2)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_3 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(2, [(1, 1), (2, 1)], '/'), (1, [(1, 2), (2, 2)], '-'), (2, [(1, 3), (2, 3)], '-'), (4, [(1, 4), (1, 5)], '-'), (6, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (3, 2)], '-'), (3, [(3, 3), (4, 3)], '-'), (2, [(3, 4), (4, 4)], '/'), (3, [(3, 5), (4, 5)], '-'), (8, [(4, 1), (4, 2)], '+'), (7, [(5, 1), (5, 2), (5, 3)], '+'), (2, [(5, 4), (5, 5)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_4 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(2, [(1, 1), (1, 2)], '-'), (3, [(1, 3), (2, 3)], '-'), (5, [(1, 4), (1, 5)], '-'), (1, [(1, 6), (2, 6)], '-'), (2, [(2, 1), (2, 2)], '-'), (10, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (4, 1)], '-'), (2, [(3, 2), (4, 2)], '/'), (30, [(3, 3), (3, 4)], '*'), (3, [(3, 5), (3, 6)], '-'), (6, [(4, 3), (4, 4)], '*'), (6, [(4, 4), (4, 5)], '+'), (6, [(5, 1), (5, 2)], '+'), (2, [(5, 3), (6, 3)], '/'), (2, [(5, 4), (5, 5)], '-'), (1, [(5, 6), (6, 6)], '-'), (3, [(6, 1), (6, 2)], '+'), (7, [(6, 4), (6, 5)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_bin_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+======================================================================
+FAIL: test_prop_fc_0 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (2, [(1, 2), (2, 2)], '-'), (6, [(1, 3), (2, 3), (3, 3)], '*'), (5, [(3, 1), (3, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_1 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(6, [(1, 1), (2, 1)], '*'), (3, [(1, 2), (1, 3)], '+'), (3, [(1, 4), (2, 4)], '-'), (7, [(2, 2), (2, 3)], '+'), (2, [(3, 1), (3, 2)], '/'), (3, [(3, 3), (4, 3)], '-'), (6, [(3, 4), (4, 4)], '*'), (7, [(4, 1), (4, 2)], '+')])
+
+
+======================================================================
+FAIL: test_prop_fc_2 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(16, [(1, 1), (1, 2), (2, 2)], '*'), (7, [(1, 3), (1, 4), (2, 3)], '+'), (4, [(2, 4)], '?'), (2, [(2, 1), (3, 1)], '-'), (2, [(3, 3), (3, 4)], '/'), (2, [(4, 3), (4, 4)], '/'), (12, [(3, 2), (4, 1), (4, 2)], '*')])
+
+
+======================================================================
+FAIL: test_prop_fc_3 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(4, [(1, 1)], '?'), (2, [(1, 2), (1, 3)], '/'), (1, [(1, 4), (2, 4)], '-'), (6, [(2, 1), (2, 2), (3, 2)], '+'), (12, [(2, 3), (3, 3), (3, 4)], '*'), (1, [(3, 1), (4, 1)], '-'), (5, [(4, 2), (4, 3)], '+'), (2, [(4, 4)], '?')])
+
+
+======================================================================
+FAIL: test_prop_fc_4 (__main__.TestPropFC)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "check() got an unexpected keyword argument 'var'". Failed to solve board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 1)], '+'), (6, [(2, 4), (3, 4)], '*'), (2, [(3, 2), (3, 3)], '-'), (2, [(4, 1), (4, 2)], '-'), (2, [(4, 3), (4, 4)], '/')])
+
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.650s
+
+FAILED (failures=25, errors=1)
+----------------------------------------------------------------------
+Time spent:
+
+test_prop_GAC_0: 0.0020s
+test_prop_GAC_1: 0.0040s
+test_prop_GAC_2: 0.0112s
+test_prop_GAC_3: 0.0088s
+test_prop_GAC_4: 0.0054s
+test_prop_GAC_5: 0.0302s
+test_prop_GAC_6: 0.0937s
+test_prop_GAC_7: 0.0177s
+test_prop_GAC_8: 0.1633s
+test_prop_GAC_9: 0.2528s
+----------------------------------------------------------------------
+Grades:
+
+FC: 0.0/0.5
+GAC: 0.75/0.75
+MRV: 0.25/0.25
+DH: 0.25/0.25
+BINARY: 0.0/0.25
+NARY: 0.0/0.25
+CAGEY: 0.0/0.5
+
+TOTAL: 1.25/2.75
+Code quality: ?/0.25
+
+Running time: 2024_01_31-17:32:10
+
+===========================================
+test_bne_grid_1 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_2 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_3 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_4 (__main__.TestBinaryGrid) ... FAIL
+test_bne_grid_5 (__main__.TestBinaryGrid) ... FAIL
+test_cage_existence (__main__.TestCageConstraints) ... ERROR
+test_cages_1 (__main__.TestCageConstraints) ... FAIL
+test_cages_2 (__main__.TestCageConstraints) ... FAIL
+test_cages_3 (__main__.TestCageConstraints) ... FAIL
+test_cages_4 (__main__.TestCageConstraints) ... FAIL
+test_cages_5 (__main__.TestCageConstraints) ... FAIL
+test_cages_6 (__main__.TestCageConstraints) ... FAIL
+test_dh_1 (__main__.TestDH) ... ok
+test_dh_2 (__main__.TestDH) ... ok
+test_dh_3 (__main__.TestDH) ... ok
+test_dh_4 (__main__.TestDH) ... ok
+test_mrv_1 (__main__.TestMRV) ... ok
+test_mrv_2 (__main__.TestMRV) ... ok
+test_mrv_3 (__main__.TestMRV) ... ok
+test_mrv_4 (__main__.TestMRV) ... ok
+test_nary_grid_1 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_2 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_3 (__main__.TestNaryGrid) ... FAIL
+test_nary_grid_4 (__main__.TestNaryGrid) ... FAIL
+test_bin_prop_fc_0 (__main__.TestPropFC) ... ok
+test_bin_prop_fc_1 (__main__.TestPropFC) ... ok
+test_bin_prop_fc_2 (__main__.TestPropFC) ... ok
+test_bin_prop_fc_3 (__main__.TestPropFC) ... ok
+test_bin_prop_fc_4 (__main__.TestPropFC) ... ok
+test_prop_fc_0 (__main__.TestPropFC) ... ok
+test_prop_fc_1 (__main__.TestPropFC) ... ok
+test_prop_fc_2 (__main__.TestPropFC) ... ok
+test_prop_fc_3 (__main__.TestPropFC) ... ok
+test_prop_fc_4 (__main__.TestPropFC) ... ok
+test_prop_GAC_0 (__main__.TestPropGAC) ... ok
+test_prop_GAC_1 (__main__.TestPropGAC) ... ok
+test_prop_GAC_2 (__main__.TestPropGAC) ... ok
+test_prop_GAC_3 (__main__.TestPropGAC) ... ok
+test_prop_GAC_4 (__main__.TestPropGAC) ... ok
+test_prop_GAC_5 (__main__.TestPropGAC) ... ok
+test_prop_GAC_6 (__main__.TestPropGAC) ... ok
+test_prop_GAC_7 (__main__.TestPropGAC) ... ok
+test_prop_GAC_8 (__main__.TestPropGAC) ... ok
+test_prop_GAC_9 (__main__.TestPropGAC) ... ok
+
+======================================================================
+ERROR: test_cage_existence (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:\Users\darwi\Documents\GitHub\CISC352_Assignments\a1\autograder_stu.py", line 616, in test_cage_existence
+    csp, var_array = cagey_csp_model(board)
+TypeError: cannot unpack non-iterable NoneType object
+
+======================================================================
+FAIL: test_bne_grid_1 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_bne_grid_2 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(3, [(1, 1), (2, 1)], '+'), (1, [(1, 2)], '?'), (8, [(1, 3), (2, 3), (2, 2)], '+'), (3, [(3, 1)], '?'), (3, [(3, 2), (3, 3)], '+')])
+
+
+======================================================================
+FAIL: test_bne_grid_3 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (3, [(1, 3), (1, 4), (2, 3)], '*'), (8, [(2, 1), (2, 2), (3, 2)], '+'), (4, [(3, 4)], '?'), (3, [(3, 1), (4, 1)], '-'), (4, [(3, 3)], '?'), (6, [(3, 4), (4, 4)], '*'), (2, [(4, 2), (4, 3)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_4 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(1, [(1, 1), (2, 1)], '-'), (10, [(1, 2), (1, 3), (2, 3), (4, 3)], '+'), (9, [(1, 4), (1, 5), (2, 4), (2, 5)], '+'), (40, [(2, 2), (3, 1), (3, 2)], '*'), (50, [(3, 4), (4, 3), (4, 4)], '*'), (10, [(3, 5), (4, 5), (5, 5)], '+'), (9, [(4, 1), (4, 2), (5, 1), (5, 2)], '+'), (4, [(5, 3), (5, 4)], '/')])
+
+
+======================================================================
+FAIL: test_bne_grid_5 (__main__.TestBinaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(11, [(1, 1), (2, 1)], '+'), (3, [(1, 2), (2, 2)], '*'), (20, [(1, 3), (2, 3), (3, 3)], '*'), (2, [(1, 4), (1, 5)], '-'), (6, [(1, 6), (2, 6)], '/'), (6, [(2, 4), (2, 5)], '*'), (5, [(3, 1), (4, 1)], '+'), (40, [(3, 2), (4, 2), (5, 2)], '*'), (10, [(3, 4), (4, 4)], '+'), (10, [(3, 5), (3, 6)], '*'), (3, [(4, 3), (5, 3)], '-'), (8, [(4, 5), (4, 6), (5, 6)], '+'), (1, [(5, 1), (6, 1), (6, 2)], '-'), (11, [(5, 4), (5, 5)], '+'), (1, [(6, 3), (6, 4)], '-'), (2, [(6, 5), (6, 6)], '-')])
+
+
+======================================================================
+FAIL: test_cages_1 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '+')])
+
+
+======================================================================
+FAIL: test_cages_2 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '-')])
+
+
+======================================================================
+FAIL: test_cages_3 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(2, [(4, [(1, 1), (1, 2), (2, 1), (2, 2)], '*')])
+
+
+======================================================================
+FAIL: test_cages_4 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '+')])
+
+
+======================================================================
+FAIL: test_cages_5 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(7, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '-')])
+
+
+======================================================================
+FAIL: test_cages_6 (__main__.TestCageConstraints)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "cannot unpack non-iterable NoneType object". Failed to construct board!
+(3, [(10, [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3)], '*')])
+
+
+======================================================================
+FAIL: test_nary_grid_1 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(3, [(2, [(1, 1), (1, 2)], '-'), (2, [(1, 3)], '?'), (2, [(2, 1), (3, 1)], '/'), (3, [(2, 2), (2, 3)], '/'), (1, [(3, 2), (3, 3)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_2 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(4, [(2, [(1, 1), (1, 2)], '/'), (7, [(1, 3), (2, 3)], '+'), (4, [(1, 4)], '?'), (1, [(2, 1), (2, 2)], '-'), (3, [(2, 2), (3, 2)], '-'), (2, [(2, 4), (3, 4)], '-'), (4, [(3, 3), (4, 3), (4, 4)], '*'), (1, [(4, 1), (4, 2)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_3 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(5, [(2, [(1, 1), (2, 1)], '/'), (1, [(1, 2), (2, 2)], '-'), (2, [(1, 3), (2, 3)], '-'), (4, [(1, 4), (1, 5)], '-'), (6, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (3, 2)], '-'), (3, [(3, 3), (4, 3)], '-'), (2, [(3, 4), (4, 4)], '/'), (3, [(3, 5), (4, 5)], '-'), (8, [(4, 1), (4, 2)], '+'), (7, [(5, 1), (5, 2), (5, 3)], '+'), (2, [(5, 4), (5, 5)], '-')])
+
+
+======================================================================
+FAIL: test_nary_grid_4 (__main__.TestNaryGrid)
+----------------------------------------------------------------------
+AssertionError: False is not true : 
+
+Student code threw exception "'NoneType' object is not subscriptable". Failed to construct board!
+(6, [(2, [(1, 1), (1, 2)], '-'), (3, [(1, 3), (2, 3)], '-'), (5, [(1, 4), (1, 5)], '-'), (1, [(1, 6), (2, 6)], '-'), (2, [(2, 1), (2, 2)], '-'), (10, [(2, 4), (2, 5)], '*'), (2, [(3, 1), (4, 1)], '-'), (2, [(3, 2), (4, 2)], '/'), (30, [(3, 3), (3, 4)], '*'), (3, [(3, 5), (3, 6)], '-'), (6, [(4, 3), (4, 4)], '*'), (6, [(4, 4), (4, 5)], '+'), (6, [(5, 1), (5, 2)], '+'), (2, [(5, 3), (6, 3)], '/'), (2, [(5, 4), (5, 5)], '-'), (1, [(5, 6), (6, 6)], '-'), (3, [(6, 1), (6, 2)], '+'), (7, [(6, 4), (6, 5)], '+')])
+
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.718s
+
+FAILED (failures=15, errors=1)
+----------------------------------------------------------------------
+Time spent:
+
+test_bin_prop_fc_0: 0.0010s
+test_bin_prop_fc_1: 0.0040s
+test_bin_prop_fc_2: 0.0030s
+test_bin_prop_fc_3: 0.0040s
+test_bin_prop_fc_4: 0.0060s
+test_prop_fc_0: 0.0011s
+test_prop_fc_1: 0.0050s
+test_prop_fc_2: 0.0040s
+test_prop_fc_3: 0.0020s
+test_prop_fc_4: 0.0025s
+test_prop_GAC_0: 0.0030s
+test_prop_GAC_1: 0.0049s
+test_prop_GAC_2: 0.0084s
+test_prop_GAC_3: 0.0061s
+test_prop_GAC_4: 0.0054s
+test_prop_GAC_5: 0.0223s
+test_prop_GAC_6: 0.1158s
+test_prop_GAC_7: 0.0194s
+test_prop_GAC_8: 0.1985s
+test_prop_GAC_9: 0.2713s
+----------------------------------------------------------------------
+Grades:
+
+FC: 0.5/0.5
+GAC: 0.75/0.75
+MRV: 0.25/0.25
+DH: 0.25/0.25
+BINARY: 0.0/0.25
+NARY: 0.0/0.25
+CAGEY: 0.0/0.5
+
+TOTAL: 1.75/2.75
+Code quality: ?/0.25
+
+Running time: 2024_01_31-17:33:40
+
+===========================================
