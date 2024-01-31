@@ -86,13 +86,85 @@ An example of a 3x3 puzzle would be defined as:
 from cspbase import *
 
 def binary_ne_grid(cagey_grid):
-    ##IMPLEMENT
-    pass
+    n, _ = cagey_grid  # Extract grid size, ignore cages for now
+    csp = CSP("Cagey_" + str(n))  # Initialize CSP object with a unique name
 
+    # Create variables
+    var_array = []
+    for i in range(n):
+        row = []
+        for j in range(n):
+            var = Variable('V{}{}'.format(i+1, j+1), list(range(1, n+1)))
+            row.append(var)
+            csp.add_var(var)
+        var_array.append(row)
+
+    # Apply binary not-equal constraints for rows and columns
+    for i in range(n):
+        for j in range(n):
+            # Row constraints
+            for k in range(j+1, n):
+                c = Constraint("C(V{}{},V{}{})".format(i+1, j+1, i+1, k+1), [var_array[i][j], var_array[i][k]])
+                c.add_satisfying_tuples(binary_ne_tuples(var_array[i][j], var_array[i][k]))
+                csp.add_constraint(c)
+
+            # Column constraints
+            for k in range(i+1, n):
+                c = Constraint("C(V{}{},V{}{})".format(i+1, j+1, k+1, j+1), [var_array[i][j], var_array[k][j]])
+                c.add_satisfying_tuples(binary_ne_tuples(var_array[i][j], var_array[k][j]))
+                csp.add_constraint(c)
+
+    # Convert var_array to a single list as specified in the instructions
+    linear_var_array = [var for row in var_array for var in row]
+    return csp, linear_var_array
+
+def binary_ne_tuples(var1, var2):
+    """Generate all satisfying tuples for a binary not-equal constraint between two variables."""
+    sat_tuples = []
+    for val1 in var1.domain():
+        for val2 in var2.domain():
+            if val1 != val2:
+                sat_tuples.append((val1, val2))
+    return sat_tuples
 
 def nary_ad_grid(cagey_grid):
-    ## IMPLEMENT
-    pass
+    n, _ = cagey_grid  # Extract grid size, ignore cages for now
+    csp = CSP("CageyAD_" + str(n))  # Initialize CSP object with a unique name
+
+    # Create variables
+    var_array = []
+    for i in range(n):
+        row = []
+        for j in range(n):
+            var = Variable('V{}{}'.format(i+1, j+1), list(range(1, n+1)))
+            row.append(var)
+            csp.add_var(var)
+        var_array.append(row)
+
+    # Apply n-ary all-different constraints for rows
+    for i in range(n):
+        vars_in_row = var_array[i]
+        c = Constraint("Row_{}".format(i+1), vars_in_row)
+        c.add_satisfying_tuples(nary_ad_tuples(vars_in_row))
+        csp.add_constraint(c)
+
+    # Apply n-ary all-different constraints for columns
+    for j in range(n):
+        vars_in_column = [var_array[i][j] for i in range(n)]
+        c = Constraint("Column_{}".format(j+1), vars_in_column)
+        c.add_satisfying_tuples(nary_ad_tuples(vars_in_column))
+        csp.add_constraint(c)
+
+    # Convert var_array to a single list as specified in the instructions
+    linear_var_array = [var for row in var_array for var in row]
+    return csp, linear_var_array
+
+def nary_ad_tuples(vars):
+    """Generate all satisfying tuples for an n-ary all-different constraint among a set of variables."""
+    from itertools import permutations
+    domain = vars[0].domain()  # Assuming all variables have the same domain
+    all_tuples = [tuple(p) for p in permutations(domain, len(vars))]
+    return all_tuples
 
 def cagey_csp_model(cagey_grid):
     ##IMPLEMENT
