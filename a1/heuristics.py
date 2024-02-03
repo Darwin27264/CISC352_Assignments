@@ -1,7 +1,7 @@
 # =============================
-# Student Names:
-# Group ID:
-# Date:
+# Student Names: Nolan Ling 20299056 & Darwin Chen 20267164
+# Group ID: 27
+# Date: feb 02 2024
 # =============================
 # CISC 352 - W23
 # heuristics.py
