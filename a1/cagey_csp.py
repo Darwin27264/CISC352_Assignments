@@ -167,5 +167,78 @@ def nary_ad_tuples(vars):
     return all_tuples
 
 def cagey_csp_model(cagey_grid):
-    ##IMPLEMENT
-    pass
+    from itertools import product
+    from math import prod
+
+    n, cages = cagey_grid
+    csp, var_array = binary_ne_grid(cagey_grid)
+
+    for cage in cages:
+        target, cells, operator = cage
+        # Convert grid cells to variables in the CSP
+        cage_variables = [var_array[(cell[0] - 1) * n + (cell[1] - 1)] for cell in cells]
+
+        # Create a variable for the cage operation
+        cage_operation = Variable(f"Cage({target}:{operator}:{cage_variables})", ["+", "-", "*", "/", "?"])
+        csp.add_var(cage_operation)
+
+        # Prepare variables for the constraint, including the operation
+        constraint_vars = cage_variables + [cage_operation]
+        constraint = Constraint(f'Cage({target}:{operator}:{cage_variables})', constraint_vars)
+
+        # Assign the operation to the cage operation variable if it's not a wildcard
+        if operator != "?":
+            cage_operation.assign(operator)
+
+        # Generate satisfying tuples for the constraint
+        satisfying_tuples = []
+        domains = [var.cur_domain() for var in constraint_vars]
+
+        if operator != "?" or len(constraint_vars) == 1:
+            for t in product(*domains):
+                if cagey_check(target, t):
+                    satisfying_tuples.append(t)
+        else:  # Handle the wildcard operator case
+            for trial_operator in ["+", "-", "*", "/"]:
+                domains[-1] = trial_operator  # Set the last domain to the trial operator
+                for t in product(*domains):
+                    if cagey_check(target, t):
+                        satisfying_tuples.append(t)
+
+        constraint.add_satisfying_tuples(satisfying_tuples)
+
+        # Add the operation variable and the constraint to the CSP
+        var_array.append(cage_operation)
+        csp.add_constraint(constraint)
+
+    return csp, var_array
+
+def cagey_check(target, operands):
+    """
+    Takes a list of valuations and attempts to determine if this is a valid assignment.
+    :param target (natural num), operands (a list of integers with an operator in the last index)
+    Return True/False
+    """
+    # Dictionary mapping operators to lambda functions for evaluation
+    operations = {
+        "+": lambda op1, op2: op1 + op2,
+        "-": lambda op1, op2: op1 - op2,
+        "*": lambda op1, op2: op1 * op2,
+        "/": lambda op1, op2: op1 / op2
+    }
+
+    value = 0
+    operator = operands[-1]
+    operands = operands[:-1]
+
+    if len(operands) == 1:
+        return target == operands[0]
+    elif len(operands) == 2:
+        # Use lambda function from the dictionary
+        return target == abs(operations[operator](operands[0], operands[1]))
+    else:
+        value = operands[0]
+        for i in range(1, len(operands)):
+            # Use lambda function from the dictionary for each pair of operands
+            value = operations[operator](value, operands[i])
+        return target == abs(value)
