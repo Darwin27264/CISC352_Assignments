@@ -1,0 +1,15 @@
+- CISC 352 - Group 123 -
+
+Students that worked on Assignment 2:
+
+Chen, Darwin
+20DDC
+20267164
+
+Ling, Nolan
+21NJRL
+20299056
+
+The work is split so that Darwin completed p03 and p04, while Nolan had completed domain, p01, p02.
+
+
