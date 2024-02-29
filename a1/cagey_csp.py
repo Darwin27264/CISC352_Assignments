@@ -166,6 +166,7 @@ def nary_ad_tuples(vars):
     all_tuples = [tuple(p) for p in permutations(domain, len(vars))]
     return all_tuples
 
+
 def cagey_csp_model(cagey_grid):
     from itertools import product
     from math import prod
